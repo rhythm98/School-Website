@@ -1,0 +1,96 @@
+﻿.greytable{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+    font-family: Tahoma; 
+    width:98%;
+    border:1px solid #444444; 
+    margin:1%;
+}
+.greytable  tr.greytableTableHeaderRow{
+    margin: 10px;
+    padding: 10px;
+    color: #444444;
+    background: #dedede;
+    text-align: left;
+    font-size: 10pt;  
+    font-style: normal;
+    font-family: Tahoma;  
+    text-transform: capitalize;
+    font-weight: bold;
+    border-spacing: 10px;
+    line-height: 14pt;
+    vertical-align: top;
+}
+.greytable  td.greytableTableHeaderFirstCol{
+    padding: 5px 5.4pt 5px 5.4pt;
+    color: #444444;
+    line-height: 14pt;
+}
+.greytable  td.greytableTableHeaderLastCol{
+    padding: 5px 5.4pt 5px 5.4pt; 
+    color: #444444;
+    line-height: 14pt;
+}
+.greytable  td.greytableTableHeaderOddCol{
+    padding:5px 5.4pt 5px 5.4pt; 
+    color: #444444;
+    line-height: 14pt;
+}
+.greytable  td.greytableTableHeaderEvenCol 
+{
+    padding:5px 5.4pt 5px 5.4pt; color: #444444;
+    line-height: 14pt;
+}
+.greytable  tr.greytableTableOddRow{
+    color: #444444;
+    background-color: #efefef;
+    font-size: 10pt;   
+    vertical-align: top;
+}
+.greytable  tr.greytableTableEvenRow{
+    color: #444444;
+    background-color: #ffffff;
+    font-size: 10pt;   
+    vertical-align: top;
+}
+.greytable  td.greytableTableFirstCol{
+    padding: 5px 5.4pt 5px 5.4pt;
+}
+.greytable  td.greytableTableLastCol{
+    padding:5px 5.4pt 5px 5.4pt;
+}
+.greytable  td.greytableTableOddCol{
+    padding: 5px 5.4pt 5px 5.4pt;
+}
+.greytable  td.greytableTableEvenCol{
+    padding:5px 5.4pt 5px 5.4pt;
+}
+.greytable  tr.greytableTableFooterRow{
+    background-color: #cccccc;
+    color: #dedede;
+    font-weight: 500;
+    font-size: 10pt;  
+    font-family: Tahoma;  
+    line-height: 11pt;
+}
+.greytable  td.greytableTableFooterFirstCol{
+    padding: 0in 5.4pt 0in 5.4pt;
+    border-top: solid gray 1.0pt;
+    text-align: left;
+}
+.greytable  td.greytableTableFooterLastCol{
+    padding:0in 5.4pt 0in 5.4pt;
+    border-top:solid gray 1.0pt;
+    text-align:left;
+}
+.greytable  td.greytableTableFooterOddCol{
+    padding: 0in 5.4pt 0in 5.4pt;
+    text-align: left;
+    border-top: solid gray 1.0pt;
+}
+.greytable  td.greytableTableFooterEvenCol{
+    padding: 0in 5.4pt 0in 5.4pt;
+    text-align: left;
+    border-top: solid gray 1.0pt;
+}

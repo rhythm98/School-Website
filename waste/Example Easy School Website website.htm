@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Example Easy School Website website
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><link href="Example%20Easy%20School%20Website%20website_files/Format.css" rel="stylesheet" type="text/css"><link href="Example%20Easy%20School%20Website%20website_files/EditorTables.css" rel="stylesheet" type="text/css">
+    <script src="Example%20Easy%20School%20Website%20website_files/ga.js" async="" type="text/javascript"></script><script src="Example%20Easy%20School%20Website%20website_files/widgets.js" id="twitter-wjs"></script><script src="Example%20Easy%20School%20Website%20website_files/RAD.js" type="text/javascript"></script>
+    <style type="text/css">
+        .TelerikModalOverlay
+        {
+            background: black !important;
+            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80) !important;
+            opacity: 0.8 !important;
+            -moz-opacity: 0.8 !important;
+            z-index: 1000000 !important;
+        }
+    </style>
+<link href="Example%20Easy%20School%20Website%20website_files/WebResource.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_003.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_007.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_002.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_006.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_005.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="Example%20Easy%20School%20Website%20website_files/WebResource_004.css" type="text/css" rel="stylesheet" class="Telerik_stylesheet"></head>
+<body data-twttr-rendered="true" id="bdyBody" style="background-color:#FFFFFF">
+    <form method="post" action="" id="frmPage">
+<div class="aspNetHidden">
+<input name="RadScriptManager_TSM" id="RadScriptManager_TSM" value=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-US:89093640-ae6b-44c3-b8ea-010c934f8924:ea597d4b:b25378d2;Telerik.Web.UI, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:0507d587-20ad-4e22-b866-76bd3eaee2df:16e4e7cd:f7645509:24ee1bba:e330518b:2003d0b8:1e771326:c8618e41:19620875:3f6e8f3f:92fe8ea0:f46195d3:fa31b949:874f8ea2:490a9d4e:bd8f85e4" type="hidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4OTg1MDc0OTAPZBYCZg9kFgICAw8WAh4Fc3R5bGUFGGJhY2tncm91bmQtY29sb3I6I0ZGRkZGRhYCAgEPZBYGAgMPFgIfAAUZYm9yZGVyOnNvbGlkIDE1cHggIzAwMDA2NhYMAgEPFgIfAAU3aGVpZ2h0Ojk3cHg7IGJhY2tncm91bmQtY29sb3I6IzAwNjY5OTtmb250LWZhbWlseTpBcmlhbBYEAgEPFgQfAAVDZm9udC1mYW1pbHk6QXJpYWw7Zm9udC1zaXplOjM3NyU7IGNvbG9yOiNGRkZGRkY7Zm9udC13ZWlnaHQ6bm9ybWFsOx4JaW5uZXJodG1sBRtFeGFtcGxlIEVhc3kgU2Nob29sIFdlYnNpdGVkAgMPZBYCAgEPDxYCHgRUZXh0BRxNYWtpbmcgc2Nob29sIHdlYnNpdGVzIGVhc3khZGQCAw8WAh8ABWBib3JkZXItYm90dG9tLWNvbG9yOiMwMDY2OTk7YmFja2dyb3VuZDp1cmwoL0ltYWdlcy9IZWFkZXJzL0hlYWRlckltYWdlMS5wbmcpIHRvcCBsZWZ0IG5vLXJlcGVhdDtkAgUPZBYCAgEPFCsAAhQrAAIPFgYeBFNraW4FClNpdGVmaW5pdHkeC18hRGF0YUJvdW5kZx4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoZA8UKwALFCsAAg8WBh8CBQdXZWxjb21lHgVWYWx1ZQUDMjAxHgtOYXZpZ2F0ZVVybAUZU2Nob29sV2Vic2l0ZS5hc3B4P0lEPTIwMWRkFCsAAg8WBh8CBQVBYm91dB8GBQMyMDIfBwUQUGFnZS5hc3B4P0lEPTIwMmRkFCsAAg8WBh8CBQpDb250YWN0IFVzHwYFAzIwMx8HBRVDb250YWN0VXMuYXNweD9JRD0yMDNkZBQrAAIPFgYfAgUIUG9saWNpZXMfBgUDMjA3HwcFFFBvbGljaWVzLmFzcHg/SUQ9MjA3ZGQUKwACDxYGHwIFDlN0YWZmIHByb2ZpbGVzHwYFAzIwOB8HBRFTdGFmZi5hc3B4P0lEPTIwOGRkFCsAAg8WBh8CBQtOZXdzbGV0dGVycx8GBQQzMjEwHwcFEVBhZ2UuYXNweD9JRD0zMjEwZGQUKwACDxYGHwIFDlNjaG9vbCBjb3VuY2lsHwYFBDMyMTEfBwUR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PlJlZ2lzdGVyIGZvciBmcmVlIGF0IDxhIGhyZWY9Imh0dHA6Ly93d3cuRWFzeVNjaG9vbFdlYnNpdGUuY29tIj53d3cuRWFzeVNjaG9vbFdlYnNpdGUuY29tPC9hPiBhbmQgY3JlYXRlIHlvdXIgb3duIHNjaG9vbCB3ZWJzaXRlITwvcD5kAgEPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAyNC8wNS8yMDEzIE5vdyBzdXBwb3J0aW5nIEdvb2dsZSBBbmFseXRpY3Mh3AFBbnkgd2Vic2l0ZSBidWlsdCB1c2luZyBFYXN5IFNjaG9vbCBXZWJzaXRlIGNhbiBub3cgdXNlIEdvb2dsZSBBbmFseXRpY3MhPGJyIC8+DQpTaW1wbHkgY3JlYXRlIGEgR29vZ2xlIEFuYWx5dGljcyBhY2NvdW50IGFuZCB0aGVuIGNvcHkgeW91ciB1bmlxdWUgdHJhY2tpbmcgY29kZSBpbnRvIHlvdXIgRWFzeSBTY2hvb2wgV2Vic2l0ZSBjb250cm9sIHBhbmVsLiBTaW1wbGUhPGJyIC8+ZAICDw8WBB8IGwAAAAAAAGlAAQAAAB8JAoABZBYCZg8VAwsgMjUvMDQvMjAxMyBCcmluZy1hbmQtYnV5IHNhbGUgcmFpc2VzIMKjNDU2IfIBV2Ugd291bGQgbGlrZSB0byB0aGFuayBldmVyeWJvZHkgdGhhdCBtYWRlIHRoaXMgeWVhcidzIGJyaW5nLWFuZC1idXkgc2FsZSB0aGUgYmVzdCBldmVyITxiciAvPg0KPGJyIC8+DQpFdmVyeWJvZHkgd29ya2VkIHNvIGhhcmQgdG8gbWFrZSB0aGUgZXZlbnQgYSBzdWNjZXNzIGFuZCB0aGUgbW9uZXkgcmFpc2VkIHdpbGwgbWFrZSBhIGh1Z2UgZGlmZmVyZW5jZS48YnIgLz4NCjxiciAvPg0KV2VsbCBkb25lIGV2ZXJ5Ym9keSFkAgMPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAwNS8xMS8yMDEyHFNjaG9vbCBpcyBjbG9zZWQgZHVlIHRvIHNub3cVU2Nob29sIGlzIG5vdyBjbG9zZWQhZAIEDw8WBB8IGwAAAAAAAGlAAQAAAB8JAoABZBYCZg8VAwsgMDYvMDIvMjAxMh5HYWxsZXJ5IGZlYXR1cmUgbm93IGF2YWlsYWJsZSGYAldlIGFyZSBwbGVhc2VkIHRvIGFubm91bmNlIG91ciBsYXRlc3QgZmVhdHVyZSwgIkdhbGxlcnkiLjxiciAvPg0KPGJyIC8+DQpBbnkgcmVnaXN0ZXJlZCBzY2hvb2wgY2FuIG5vdyBhZGQgYSBnYWxsZXJ5IGNvbnRhaW5pbmcgdW5saW1pdGVkIGFsYnVtcyBhbmQgdW5saW1pdGVkIHBob3Rvcy48YnIgLz4NCjxiciAvPg0KPGEgaHJlZj0iaHR0cDovL3d3dy5lYXN5c2Nob29sd2Vic2l0ZS5jb20iIHRhcmdldD0iX2JsYW5rIj5SZWdpc3RlciBmb3IgZnJlZTwvYT4gYW5kIHRyeSBpdCB0b2RheSFkAgUPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAyMC8wMS8yMDEyKkhlYWRlciBiYXIgbm93IHN1cHBvcnRzIG1pc3Npb24gc3RhdGVtZW50IZ0CRm9sbG93aW5nIG51bWVyb3VzIHJlcXVlc3RzIGZyb20gb3VyIHJlZ2lzdGVyZWQgc2Nob29scywgd2UgaGF2ZSBwcm92aWRlZCB0aGUgYWJpbGl0eSB0byBwdXQgYSBzdWItaGVhZGluZyBpbnRvIHRoZSBoZWFkZXIgb2YgeW91ciBFYXN5IFNjaG9vbCBXZWJzaXRlLiA8YnIgLz4NCjxiciAvPg0KTWF5YmUgeW91ciBzY2hvb2wgaGFzIGEgbWlzc2lvbiBzdGF0ZW1lbnQgb3IgYSBzbG9nYW4gdGhhdCBvZnRlbiBmb2xsb3dzIHlvdXIgc2Nob29sIG5hbWU/IE5vdyB5b3UgY2FuIGVhc2lseSBhZGQgaXQhZAIGDw8WBB8IGwAAAAAAAGlAAQAAAB8JAoABZBYCZg8VAwsgMTkvMDEvMjAxMi03MDB0aCBzY2hvb2wgc2lnbnMgdXAgZm9yIEVhc3kgU2Nob29sIFdlYnNpdGXyAVdlIGFyZSBkZWxpZ2h0ZWQgdG8gYW5ub3VuY2UgdGhhdCBvdmVyIDcwMCBzY2hvb2xzIGhhdmUgbm93IGJ1aWx0IGEgd2Vic2l0ZSB3aXRoIHVzLiBNYWtlIHN1cmUgeW91IGdldCB5b3VyIHNjaG9vbCBpbnZvbHZlZCBieSBjcmVhdGluZyBhIGZyZWUgYWNjb3VudCBhdCA8YSBocmVmPSJodHRwOi8vd3d3LmVhc3lzY2hvb2x3ZWJzaXRlLmNvbSIgdGFyZ2V0PSJfYmxhbmsiPnd3dy5FYXN5U2Nob29sV2Vic2l0ZS5jb208L2E+ZAIHDw8WBB8IGwAAAAAAAGlAAQAAAB8JAoABZBYCZg8VAwsgMzAvMTEvMjAxMSNTY2hvb2wgY2xvc2VkIGR1ZSB0byB0ZWFjaGVyIHN0cmlrZY8BU2Nob29sIHdpbGwgYmUgY2xvc2VkIGR1ZSB0byB0aGUgcGxhbm5lZCBpbnN1dHJpYWwgYWN0aW9uIHRoYXQgbWFueSBvZiBvdXIgdGVhY2hlcnMgd2lsbCBiZSBiYWNraW5nLiBTY2hvb2wgd2lsbCByZS1vcGVuIGFzIG5vcm1hbCBvbiBUaHVyc2RheS5kAggPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAwOC8xMC8yMDExGE5ld3Mgbm93IHN1cHBvcnRzIGxpbmtzIbECQXMgb2YgMDgvMTAvMjAxMSwgRWFzeSBTY2hvb2wgV2Vic2l0ZSBub3cgc3VwcG9ydHMgdGhlIGluY2x1c2lvbiBvZiBsaW5rcyBpbnRvIG5ld3MgaXRlbXMgYWRkZWQgdG8geW91ciBob21lcGFnZSE8YnIgLz4NCjxiciAvPg0KSWYgeW91IHdvdWxkIGxpa2UgdG8gYnVpbGQgeW91ciBzY2hvb2wgd2Vic2l0ZSwgd2l0aCBubyBvYmxpZ2F0aW9uLCBwbGVhc2UgcmVnaXN0ZXIgYXQgPGEgaHJlZj0iaHR0cDovL3d3dy5FYXN5U2Nob29sV2Vic2l0ZS5jb20iIHRhcmdldD0iX2JsYW5rIj53d3cuRWFzeVNjaG9vbFdlYnNpdGUuY29tPC9hPi5kAgkPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAyNi8wOS8yMDExMDI1OCBtb3JlIHNjaG9vbHMgc2lnbiB1cCB0byBFYXN5IFNjaG9vbCBXZWJzaXRlIZIBMjU4IHNjaG9vbHMgaGF2ZSByZWdpc3RlcmVkIHdpdGggRWFzeSBTY2hvb2wgV2Vic2l0ZSB0aGlzIHRlcm0gYWxvbmUsIGFuZCB0aGUgbWFqb3JpdHkgYXJlIGFscmVhZHkgd2VsY29taW5nIHRoZWlyIHZpc2l0b3JzIHRvIHRoZWlyIG5ldyB3ZWJzaXRlcyFkAgoPDxYEHwgbAAAAAAAAaUABAAAAHwkCgAFkFgJmDxUDCyAyNS8wOS8yMDExFU5ldyB3ZWJzaXRlIGxhdW5jaGVkIZoCV2UgYXJlIHZlcnkgcGxlYXNlZCBhYm91dCB0aGUgbGF1bmNoIG9mIG91ciBuZXcgd2Vic2l0ZS4gRXhhbXBsZSBFYXN5IFNjaG9vbCBoYXMgYnVpbHQgaXRzIG93biB3ZWJzaXRlIG9ubGluZSB1c2luZyBFYXN5IFNjaG9vbCBXZWJzaXRlLg0KDQpBcyB0aGUgd2Vic2l0ZSBpcyB2ZXJ5IGVhc3kgdG8gdXBkYXRlLCB3ZSB3aWxsIGVuc3VyZSB0aGF0IGFsbCBrZXkgYW5ub3VuY2VtZW50cyBhcmUgYWRkZWQgdG8gb3VyIG5ld3MgdGlja2VyLiBTdGF5IHR1bmVkIGZvciB0aGUgbGF0ZXN0IG5ld3MhZAILDw8WBB8IGwAAAAAAAGlAAQAAAB8JAoABZBYCZg8VAwsgMjIvMDkvMjAxMQlIYWxmIHRlcm18SnVzdCBhIHF1aWNrIHJlbWluZGVyIHRoYXQgbmV4dCB3ZWVrIGlzIGhhbGYgdGVybS4gU2Nob29sIHdpbGwgYmUgY2xvc2VkIGZyb20gTW9uZGF5IDI1dGggT2N0b2JlciB1bnRpbCBNb25kYXkgMXN0IE5vdmVtYmVyLmQCDA8PFgQfCBsAAAAAAABpQAEAAAAfCQKAAWQWAmYPFQMLIDExLzEwLzIwMTAaU2Nob29sIGZldGUgcmFpc2VzIMKjMjAwMCHMAVdlIGFyZSBkbGlnaHRlZCB0byBhbm5vdW5jZSB0aGF0IHRoZSBzY2hvb2wgZmV0ZSBoYXMgcmFpc2VkIMKjMjAwMC4gV2Ugd291bGQgbGlrZSB0byB0aGFuayBldmVyeWJvZHkgd2hvIGhlbHBlZCB0byBtYWtlIHRoaXMgeWVhcnMgZXZlbnQgc3VjaCBhIHN1Y2Nlc3MsIGFuZCB3ZSBsb29rIGZvcndhcmQgdG8gcmFpc2luZyBldmVuIG1vcmUgbmV4dCB5ZWFyIWQCAw8WBB8BBa4DPGEgY2xhc3M9InR3aXR0ZXItdGltZWxpbmUiICBocmVmPSJodHRwczovL3R3aXR0ZXIuY29tL0Vhc3lTY2hvb2xXZWIiICBkYXRhLXdpZGdldC1pZD0iMzU5MzAzOTc5NzMxMTQwNjA4Ij5Ud2VldHMgYnkgQEVhc3lTY2hvb2xXZWI8L2E+DQo8c2NyaXB0PiFmdW5jdGlvbihkLHMsaWQpe3ZhciBqcyxmanM9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSxwPS9eaHR0cDovLnRlc3QoZC5sb2NhdGlvbik/J2h0dHAnOidodHRwcyc7aWYoIWQuZ2V0RWxlbWVudEJ5SWQoaWQpKXtqcz1kLmNyZWF0ZUVsZW1lbnQocyk7anMuaWQ9aWQ7anMuc3JjPXArIjovL3BsYXRmb3JtLnR3aXR0ZXIuY29tL3dpZGdldHMuanMiO2Zqcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqcyxmanMpO319KGRvY3VtZW50LCJzY3JpcHQiLCJ0d2l0dGVyLXdqcyIpOzwvc2NyaXB0Ph4HVmlzaWJsZWdkAgUPFgIfAQUQPGgxPldlbGNvbWU8L2gxPmQCBw8PFgIfAgWGCTxwPldlbGNvbWUgdG8gdGhlIEV4YW1wbGUgRWFzeSBTY2hvb2wgV2Vic2l0ZS4gVGhpcyBzaXRlIGhhcyBiZWVuIGNyZWF0ZWQgdG8gZGVtb25zdHJhdGUgaG93IHNjaG9vbHMgY2FuIHZlcnkgZWFzaWx5IGNyZWF0ZSBhbmQgbWFpbnRhaW4gdGhlaXIgb3duIHdlYnNpdGUgdXNpbmcgPGEgaHJlZj0iaHR0cDovL3d3dy5lYXN5c2Nob29sd2Vic2l0ZS5jb20iIHRhcmdldD0iX2JsYW5rIj5FYXN5IFNjaG9vbCBXZWJzaXRlPC9hPi48L3A+DQo8cD5UaGlzIGVudGlyZSB3ZWJzaXRlIGhhcyBiZWVuIGNyZWF0ZWQgdXNpbmcgdGhlIEVhc3kgU2Nob29sIFdlYnNpdGUgc3lzdGVtLiBUaGUgZGVzaWduIHdhcyBjcmVhdGVkIGluIGxlc3MgdGhhbiB0d28gbWludXRlcywgYW5kIHRoZW4gd2Ugc3RhcnRlZCBhZGRpbmcgb3VyIHBhZ2UgY29udGVudCB1c2luZyB0aGUgc2ltcGxlIHBhZ2UgZWRpdG9yLiBBbGwgb2YgdGhpcyB3YXMgZG9uZSBmb3IgZnJlZSB3aXRoaW4gYSBzdGFuZGFyZCB3ZWIgYnJvd3Nlci48L3A+DQo8cD5JdCdzIHJlYWxseSBlYXN5IHRvIGFkZCBuZXdzIHRvIHlvdXIgd2Vic2l0ZSwgc28gdGhhdCBpbXBvcnRhbnQgYW5ub3VuY2VtZW50cyBhcmUgcHVibGlzaGVkIHF1aWNrbHkuIElmIHlvdXIgc2Nob29sIGhhcyBhIFR3aXR0ZXIgYWNjb3VudCwgeW91IGNhbiBhZGQgeW91ciBmZWVkIHRvIHlvdXIgaG9tZXBhZ2UgYnkgc2ltcGx5IGVudGVyaW5nIHlvdXQgYWNjb3VudCBuYW1lITwvcD4NCjxwPlNjaG9vbHMgYXJlIHdlbGNvbWUgdG8gcmVnaXN0ZXIgYW5kIGJ1aWxkIHRoZWlyIHdlYnNpdGUgY29tcGxldGVseSBmcmVlIG9mIGNoYXJnZSAtIHdlIG9ubHkgY2hhcmdlIHlvdXIgc2Nob29sIG9uY2UgeW91IGFyZSByZWFkeSB0byBwdWJsaXNoIHlvdXIgd2Vic2l0ZSBsaXZlIG9uIHRoZSBpbnRlcm5ldC48L3A+DQo8cD5JZiB5b3UgYXJlIGludGVyZXN0ZWQgaW4gaG93IHlvdSBjYW4gYnVpbGQgYSBzaW1pbGFyIHdlYnNpdGUgZm9yIHlvdXIgc2Nob29sIHRoYXQgaXMgYm90aCBlYXN5IHRvIGNyZWF0ZSBhbmQgbWFpbnRhaW4sIHBsZWFzZSB2aXNpdCB1cyBhdCA8YSBocmVmPSJodHRwOi8vd3d3LkVhc3lTY2hvb2xXZWJzaXRlLmNvbSIgdGFyZ2V0PSJfYmxhbmsiPnd3dy5FYXN5U2Nob29sV2Vic2l0ZS5jb208L2E+PC9wPmRkAgsPFgIfAAUYYmFja2dyb3VuZC1jb2xvcjojMDA2Njk5FgICAQ8PFgIfAgUOQ29weXJpZ2h0IDIwMTNkZAIHDxQrAAIUKwADDxYCHwVoZGRkEBYBZhYBFCsAAw8WAh8FaGRkZA8WAWYWAQVxVGVsZXJpay5XZWIuVUkuUmFkV2luZG93LCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDEzLjIuNzE3LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQWAmYPFCsAAw8WAh8FaGRkZGQCCQ8WAh8BBeYDPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KDQogIHZhciBfZ2FxID0gX2dhcSB8fCBbXTsNCiAgX2dhcS5wdXNoKFsnX3NldEFjY291bnQnLCAnVUEtNDExODYwMjItMSddKTsNCiAgX2dhcS5wdXNoKFsnX3RyYWNrUGFnZXZpZXcnXSk7DQoNCiAgKGZ1bmN0aW9uKCkgew0KICAgIHZhciBnYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOyBnYS50eXBlID0gJ3RleHQvamF2YXNjcmlwdCc7IGdhLmFzeW5jID0gdHJ1ZTsNCiAgICBnYS5zcmMgPSAoJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAnaHR0cHM6Ly9zc2wnIDogJ2h0dHA6Ly93d3cnKSArICcuZ29vZ2xlLWFuYWx5dGljcy5jb20vZ2EuanMnOw0KICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOyBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhLCBzKTsNCiAgfSkoKTsNCg0KPC9zY3JpcHQ+ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBQUVY3RsMDAkcmFkTWVudU1haW5NZW51BRVjdGwwMCRSYWRNZW51U2lkZU1lbnUFHGN0bDAwJGNwaFBhZ2VDb250ZW50JHJvdE5ld3MFFmN0bDAwJHdkbVdpbmRvd01hbmFnZXIFE2N0bDAwJHdpbkFsYnVtSW1hZ2ULQtCCCFenOUtP5EjbJsCLtg57SXf11RzoEVcmCjGmHg==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmPage'];
+if (!theForm) {
+    theForm = document.frmPage;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Example%20Easy%20School%20Website%20website_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Example%20Easy%20School%20Website%20website_files/Telerik.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALo3em1CQKeporSBgLugNTrDgLeyJ+YA6yv+PrFHaOXjiaibWHEgLUoFY058RVnm6EFR7eqBD7t" type="hidden">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager', 'frmPage', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="divMainContainer" class="MainSiteContainer" style="border:solid 15px #000066">
+        <!-- Main Container -->
+        <div id="divHeaderContainer" class="Header" style="height:97px; background-color:#006699;font-family:Arial">
+            <!-- Header -->
+            <h1 id="h1MainHeader" class="HeaderText" style="font-family:Arial;font-size:377%; color:#FFFFFF;font-weight:normal;">Example Easy School Website</h1>
+            <div id="divMissionStatement" class="HeaderMissionStatement">
+                <span id="lblMissionStatement">Making school websites easy!</span>
+            </div>
+            <!-- Header Ends -->
+        </div>
+        <div id="divHeaderImage" class="MainImageContainer" style="border-bottom-color:#006699;background:url(/Images/Headers/HeaderImage1.png) top left no-repeat;">
+        </div>
+        <div id="divMainMenuContainer" class="MainSiteMenuContainer">
+            <!-- Main Menu -->
+            <div id="ctl00_radMenuMainMenu" class="RadMenu RadMenu_Sitefinity rmSized" style="width:100%;z-index: 90000;">
+	<!-- 2013.2.717.40 --><ul class="rmRootGroup rmHorizontal">
+		<li class="rmItem rmFirst"><a href="http://example.easyschoolwebsite.com/SchoolWebsite.aspx?ID=201" class="rmLink rmRootLink"><span class="rmText">Welcome</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=202" class="rmLink rmRootLink"><span class="rmText">About</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/ContactUs.aspx?ID=203" class="rmLink rmRootLink"><span class="rmText">Contact Us</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Policies.aspx?ID=207" class="rmLink rmRootLink"><span class="rmText">Policies</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Staff.aspx?ID=208" class="rmLink rmRootLink"><span class="rmText">Staff profiles</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3210" class="rmLink rmRootLink"><span class="rmText">Newsletters</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3211" class="rmLink rmRootLink"><span class="rmText">School council</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3212" class="rmLink rmRootLink"><span class="rmText">Sponsors</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3213" class="rmLink rmRootLink"><span class="rmText">Our governors</span></a></li><li class="rmItem "><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3214" class="rmLink rmRootLink"><span class="rmText">Employment</span></a></li><li class="rmItem rmLast"><a href="http://example.easyschoolwebsite.com/Page.aspx?ID=3233" class="rmLink rmRootLink"><span class="rmText">Ofsted</span></a></li>
+	</ul><input autocomplete="off" id="ctl00_radMenuMainMenu_ClientState" name="ctl00_radMenuMainMenu_ClientState" type="hidden">
+</div>
+            <!-- Main Menu Ends -->
+        </div>
+        <div id="divSubMenuContainer" class="SiteSubMenu">
+            <!-- Sub menu -->
+            <div id="ctl00_RadMenuSideMenu" class="RadMenu RadMenu_Sitefinity rmSized" style="border-style:None;width:100%;z-index: 80000;">
+	<ul class="rmRootGroup rmVertical">
+		<li class="rmItem rmFirst"><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=275" class="rmLink rmRootLink"><span class="rmText">School Calendar</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=265" class="rmLink rmRootLink"><span class="rmText">School day</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=261" class="rmLink rmRootLink"><span class="rmText">Pupils</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=274" class="rmLink rmRootLink"><span class="rmText">Uniform</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=204" class="rmLink rmRootLink"><span class="rmText">Subjects</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Gallery.aspx?ID=3510" class="rmLink rmRootLink"><span class="rmText">Gallery</span></a></li><li class="rmItem "><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=8394" class="rmLink rmRootLink"><span class="rmText">Documents</span></a></li><li class="rmItem rmLast"><a style="width: 176px;" href="http://example.easyschoolwebsite.com/Page.aspx?ID=3235" class="rmLink rmRootLink"><span class="rmText">School Clubs</span></a></li>
+	</ul><script type="text/javascript">
+		Telerik.Web.UI.RadMenu._adjustRootItemWidth("ctl00_RadMenuSideMenu");
+	</script><input autocomplete="off" id="ctl00_RadMenuSideMenu_ClientState" name="ctl00_RadMenuSideMenu_ClientState" type="hidden">
+</div>
+            <!-- End Sub menu -->
+        </div>
+        <div id="divMainContentArea" class="SiteMainContent" style="background-color:#FFFFFF; font-family:Arial">
+            <!-- Main Content -->
+            <div id="divPageContent">
+                
+    <div class="HomepageText">
+        <div class="NewsTickerContainer">
+            Latest news
+            <div id="ctl00_cphPageContent_rotNews" class="RadRotator RadRotator_Default rrNoBorder" style="height: 200px; width: 95%; visibility: visible;">
+	<div style="height: 200px; width: 219px;" class="rrRelativeWrapper">
+		<div style="overflow: hidden; width: 219px; height: 200px; position: relative;" class="rrClipRegion">
+			<ul style="width: 219px; height: 2600px; position: relative; left: 0px; top: -1513.56px;" class="rrItemsList rrVerticalList"><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i0">
+					
+                    <div class="Date">
+                         13/10/2013</div>
+                    <div class="Headline">
+                        New version of Easy School Website launched!</div>
+                    <div class="Details">
+                        <p>We are really pleased to announce the launch of the all new Easy School Website.</p>
+<p>&nbsp;</p>
+<p>Register for free at <a href="http://www.easyschoolwebsite.com/">www.EasySchoolWebsite.com</a> and create your own school website!</p></div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i1">
+					
+                    <div class="Date">
+                         24/05/2013</div>
+                    <div class="Headline">
+                        Now supporting Google Analytics!</div>
+                    <div class="Details">
+                        Any website built using Easy School Website can now use Google Analytics!<br>
+Simply create a Google Analytics account and then copy your unique 
+tracking code into your Easy School Website control panel. Simple!<br></div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i2">
+					
+                    <div class="Date">
+                         25/04/2013</div>
+                    <div class="Headline">
+                        Bring-and-buy sale raises £456!</div>
+                    <div class="Details">
+                        We would like to thank everybody that made this year's bring-and-buy sale the best ever!<br>
+<br>
+Everybody worked so hard to make the event a success and the money raised will make a huge difference.<br>
+<br>
+Well done everybody!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i3">
+					
+                    <div class="Date">
+                         05/11/2012</div>
+                    <div class="Headline">
+                        School is closed due to snow</div>
+                    <div class="Details">
+                        School is now closed!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i4">
+					
+                    <div class="Date">
+                         06/02/2012</div>
+                    <div class="Headline">
+                        Gallery feature now available!</div>
+                    <div class="Details">
+                        We are pleased to announce our latest feature, "Gallery".<br>
+<br>
+Any registered school can now add a gallery containing unlimited albums and unlimited photos.<br>
+<br>
+<a href="http://www.easyschoolwebsite.com/" target="_blank">Register for free</a> and try it today!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i5">
+					
+                    <div class="Date">
+                         20/01/2012</div>
+                    <div class="Headline">
+                        Header bar now supports mission statement!</div>
+                    <div class="Details">
+                        Following numerous requests from our registered 
+schools, we have provided the ability to put a sub-heading into the 
+header of your Easy School Website. <br>
+<br>
+Maybe your school has a mission statement or a slogan that often follows your school name? Now you can easily add it!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i6">
+					
+                    <div class="Date">
+                         19/01/2012</div>
+                    <div class="Headline">
+                        700th school signs up for Easy School Website</div>
+                    <div class="Details">
+                        We are delighted to announce that over 700 
+schools have now built a website with us. Make sure you get your school 
+involved by creating a free account at <a href="http://www.easyschoolwebsite.com/" target="_blank">www.EasySchoolWebsite.com</a></div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i7">
+					
+                    <div class="Date">
+                         30/11/2011</div>
+                    <div class="Headline">
+                        School closed due to teacher strike</div>
+                    <div class="Details">
+                        School will be closed due to the planned 
+insutrial action that many of our teachers will be backing. School will 
+re-open as normal on Thursday.</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i8">
+					
+                    <div class="Date">
+                         08/10/2011</div>
+                    <div class="Headline">
+                        News now supports links!</div>
+                    <div class="Details">
+                        As of 08/10/2011, Easy School Website now 
+supports the inclusion of links into news items added to your homepage!<br>
+<br>
+If you would like to build your school website, with no obligation, please register at <a href="http://www.easyschoolwebsite.com/" target="_blank">www.EasySchoolWebsite.com</a>.</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i9">
+					
+                    <div class="Date">
+                         26/09/2011</div>
+                    <div class="Headline">
+                        258 more schools sign up to Easy School Website!</div>
+                    <div class="Details">
+                        258 schools have registered with Easy School 
+Website this term alone, and the majority are already welcoming their 
+visitors to their new websites!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i10">
+					
+                    <div class="Date">
+                         25/09/2011</div>
+                    <div class="Headline">
+                        New website launched!</div>
+                    <div class="Details">
+                        We are very pleased about the launch of our new 
+website. Example Easy School has built its own website online using Easy
+ School Website.
+
+As the website is very easy to update, we will ensure that all key 
+announcements are added to our news ticker. Stay tuned for the latest 
+news!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i11">
+					
+                    <div class="Date">
+                         22/09/2011</div>
+                    <div class="Headline">
+                        Half term</div>
+                    <div class="Details">
+                        Just a quick reminder that next week is half 
+term. School will be closed from Monday 25th October until Monday 1st 
+November.</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li><li class="rrItem" style="height:200px;"><div id="ctl00_cphPageContent_rotNews_i12">
+					
+                    <div class="Date">
+                         11/10/2010</div>
+                    <div class="Headline">
+                        School fete raises £2000!</div>
+                    <div class="Details">
+                        We are dlighted to announce that the school fete
+ has raised £2000. We would like to thank everybody who helped to make 
+this years event such a success, and we look forward to raising even 
+more next year!</div>
+                    <div class="Details">
+                    </div>
+                
+				</div></li></ul>
+		</div><a class="rrButton rrButtonUp" href="javascript:void(0);">&nbsp;</a><a class="rrButton rrButtonLeft" href="javascript:void(0);">&nbsp;</a><a class="rrButton rrButtonRight" href="javascript:void(0);">&nbsp;</a><a class="rrButton rrButtonDown" href="javascript:void(0);">&nbsp;</a>
+	</div><input autocomplete="off" id="ctl00_cphPageContent_rotNews_ClientState" name="ctl00_cphPageContent_rotNews_ClientState" type="hidden">
+</div>
+            <a href="http://example.easyschoolwebsite.com/News.aspx" class="ViewAllNews">View all news</a>
+        </div>
+        <div id="cphPageContent_divTwitterContainer" class="TwitterContainer Live"><iframe title="Twitter Timeline" style="border: medium none; max-width: 100%; min-width: 180px;" class="twitter-timeline twitter-timeline-rendered" allowtransparency="true" id="twitter-widget-0" frameborder="0" height="250" scrolling="no" width="252"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        <div id="cphPageContent_divPageTitle" class="HomepageTitle"><h1>Welcome</h1></div>
+        <br>
+        <span id="cphPageContent_lblContent"><p>Welcome to the Example 
+Easy School Website. This site has been created to demonstrate how 
+schools can very easily create and maintain their own website using <a href="http://www.easyschoolwebsite.com/" target="_blank">Easy School Website</a>.</p>
+<p>This entire website has been created using the Easy School Website 
+system. The design was created in less than two minutes, and then we 
+started adding our page content using the simple page editor. All of 
+this was done for free within a standard web browser.</p>
+<p>It's really easy to add news to your website, so that important 
+announcements are published quickly. If your school has a Twitter 
+account, you can add your feed to your homepage by simply entering yout 
+account name!</p>
+<p>Schools are welcome to register and build their website completely 
+free of charge - we only charge your school once you are ready to 
+publish your website live on the internet.</p>
+<p>If you are interested in how you can build a similar website for your
+ school that is both easy to create and maintain, please visit us at <a href="http://www.easyschoolwebsite.com/" target="_blank">www.EasySchoolWebsite.com</a></p></span>      
+    </div>
+    <input name="ctl00$cphPageContent$hintSchoolID" id="cphPageContent_hintSchoolID" value="19" type="hidden">
+    <input name="ctl00$cphPageContent$hintPageID" id="cphPageContent_hintPageID" value="0" type="hidden">
+
+            </div>
+            
+            <!-- Main Content End -->
+        </div>
+        <div id="divFooter" class="SiteFooter" style="background-color:#006699">
+            <div class="SiteFooterLeft">
+                <span id="lblFooterYear">Copyright 2013</span>
+                <a id="hypFooterPrivacyPolicy" href="http://example.easyschoolwebsite.com/PrivacyPolicy.aspx">Privacy Policy</a><a id="hypFooterTerms" href="http://example.easyschoolwebsite.com/Terms.aspx">Terms &amp; Conditions</a>
+            </div>
+            <div class="SiteFooterRight">
+                <a id="hypFooterEastSchoolWebsiteLink" href="http://www.easyschoolwebsite.com/" class="FooterEasySchoolWebsiteLink" target="_blank">Built with www.EasySchoolWebsite.com</a>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Main Container -->
+    </div>
+    <input name="ctl00$hintSchoolID" id="hintSchoolID" value="19" type="hidden">
+    <div id="ctl00_wdmWindowManager" style="z-index:1000000 !important;display:none;">
+	<div id="ctl00_winAlbumImage" style="display:none;">
+		<div id="ctl00_winAlbumImage_C" style="display:none;">
+
+		</div><input autocomplete="off" id="ctl00_winAlbumImage_ClientState" name="ctl00_winAlbumImage_ClientState" type="hidden">
+	</div><div id="ctl00_wdmWindowManager_alerttemplate" style="display:none;">
+		<div class="rwDialogPopup radalert">			
+			<div class="rwDialogText">
+			{1}				
+			</div>
+			
+			<div>
+				<a onclick="$find('{0}').close(true);" class="rwPopupButton" href="javascript:void(0);">
+					<span class="rwOuterSpan">
+						<span class="rwInnerSpan">##LOC[OK]##</span>
+					</span>
+				</a>				
+			</div>
+		</div>
+		</div><div id="ctl00_wdmWindowManager_prompttemplate" style="display:none;">
+		 <div class="rwDialogPopup radprompt">			
+			    <div class="rwDialogText">
+			    {1}				
+			    </div>		
+			    <div>
+				    <script type="text/javascript">
+				    function RadWindowprompt_detectenter(id, ev, input)
+				    {							
+					    if (!ev) ev = window.event;                
+					    if (ev.keyCode == 13)
+					    {															        
+					        var but = input.parentNode.parentNode.getElementsByTagName("A")[0];					        
+					        if (but)
+						    {							
+							    if (but.click) but.click();
+							    else if (but.onclick)
+							    {
+							        but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);							 
+							    }
+						    }
+					       return false;
+					    } 
+					    else return true;
+				    }	 
+				    </script>
+				    <input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" class="rwDialogInput" value="{2}" type="text">
+			    </div>
+			    <div>
+				    <a onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value);" class="rwPopupButton" href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				    <a onclick="$find('{0}').close(null);" class="rwPopupButton" href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			    </div>
+		    </div>				       
+		</div><div id="ctl00_wdmWindowManager_confirmtemplate" style="display:none;">
+		<div class="rwDialogPopup radconfirm">			
+			<div class="rwDialogText">
+			{1}				
+			</div>						
+			<div>
+				<a onclick="$find('{0}').close(true);" class="rwPopupButton" href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				<a onclick="$find('{0}').close(false);" class="rwPopupButton" href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			</div>
+		</div>		
+		</div><input id="ctl00_wdmWindowManager_ClientState" name="ctl00_wdmWindowManager_ClientState" type="hidden">
+</div>
+    <!--- GOOGLE ANALYTICS --->
+    <div id="divGoogleAnalytics"><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-41186022-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"Sitefinity","attributes":{},"clientStateFieldID":"ctl00_radMenuMainMenu_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","expandDelay":10,"itemData":[{"value":"201","navigateUrl":"SchoolWebsite.aspx?ID=201"},{"value":"202","navigateUrl":"Page.aspx?ID=202"},{"value":"203","navigateUrl":"ContactUs.aspx?ID=203"},{"value":"207","navigateUrl":"Policies.aspx?ID=207"},{"value":"208","navigateUrl":"Staff.aspx?ID=208"},{"value":"3210","navigateUrl":"Page.aspx?ID=3210"},{"value":"3211","navigateUrl":"Page.aspx?ID=3211"},{"value":"3212","navigateUrl":"Page.aspx?ID=3212"},{"value":"3213","navigateUrl":"Page.aspx?ID=3213"},{"value":"3214","navigateUrl":"Page.aspx?ID=3214"},{"value":"3233","navigateUrl":"Page.aspx?ID=3233"}]}, null, null, $get("ctl00_radMenuMainMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_flow":0,"_skin":"Sitefinity","attributes":{},"clientStateFieldID":"ctl00_RadMenuSideMenu_ClientState","collapseAnimation":"{\"duration\":450}","defaultGroupSettings":"{\"expandDirection\":4}","expandAnimation":"{\"duration\":450}","expandDelay":10,"itemData":[{"value":"275","navigateUrl":"Page.aspx?ID=275"},{"value":"265","navigateUrl":"Page.aspx?ID=265"},{"value":"261","navigateUrl":"Page.aspx?ID=261"},{"value":"274","navigateUrl":"Page.aspx?ID=274"},{"value":"204","navigateUrl":"Page.aspx?ID=204"},{"value":"3510","navigateUrl":"Gallery.aspx?ID=3510"},{"value":"8394","navigateUrl":"Page.aspx?ID=8394"},{"value":"3235","navigateUrl":"Page.aspx?ID=3235"}]}, null, null, $get("ctl00_RadMenuSideMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadRotator, {"_itemHeight":"200px","clientStateFieldID":"ctl00_cphPageContent_rotNews_ClientState","enableDragScrolling":false,"frameDuration":6000,"items":[{},{},{},{},{},{},{},{},{},{},{},{},{}],"scrollDirection":4,"scrollDuration":5000,"skin":"Default","slideShowAnimationSettings":{"duration":500,"type":3}}, null, null, $get("ctl00_cphPageContent_rotNews"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"autoSize":true,"behaviors":4,"clientStateFieldID":"ctl00_winAlbumImage_ClientState","enableShadow":true,"formID":"frmPage","iconUrl":"","keepInScreenBounds":true,"minimizeIconUrl":"","modal":true,"name":"winAlbumImage","reloadOnShow":true,"showContentDuringLoad":false,"skin":"Sitefinity","visibleStatusbar":false}, null, null, $get("ctl00_winAlbumImage"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"clientStateFieldID":"ctl00_wdmWindowManager_ClientState","enableShadow":true,"formID":"frmPage","iconUrl":"","minimizeIconUrl":"","name":"wdmWindowManager","skin":"Default","windowControls":"['ctl00_winAlbumImage']"}, null, {"child":"ctl00_winAlbumImage"}, $get("ctl00_wdmWindowManager"));
+});
+//]]>
+</script>
+</form>
+
+
+<iframe style="display: none;" allowtransparency="true" id="rufous-sandbox" frameborder="0" scrolling="no"></iframe></body></html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<figure>
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+
+</body>
+</html>

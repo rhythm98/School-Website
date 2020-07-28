@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<div id="left slidebar" style=" background-color:  white; height: 1500; width: 100% ; float: left ">
+<div id="left slidebar" style=" background-color: white; height: 1500; width: 85% ; float: right ">
+<div id="content" style=" background-color: white; height: 1500; width: 84% ; float: center ">
+<table>
+<tr>
+<td><img src="bbdd90_723cdd4ab9dab3e1170f1de92ee3de2b.jpg_srz_181_182_75_22_0.50_1.20_0.00_jpg_srz.jpg"></td>
+<td><font color="white">ssssssssssssss</td>
+<td><FONT face="TIMES NEW ROMAN" size="+4" color="green"><b><center>ST.MARY'S SCHOOL</b></font></center>
+<font face="calibri " color="firebrick" size="+1"><center>(Affilated to Central Board of Secondary Education)</center></font><br>
+<font face="lucida bright" color="green" size="4"><center><b>Affilation No.- 430094</b></font></center><br>
+<font color="firebrick" face="calibri " ><b><CENTER>Managed by : ZOROASTRIAN CHARITABLE EDUCATION TRUST</FONT></b></CENTER></td>
+</tr><br><br>
+</table><br><br><br><br><br>
+<hr>
+</body>
+</html>

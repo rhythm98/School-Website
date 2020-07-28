@@ -1,0 +1,6 @@
+<frameset="20%,60%,20%">
+<frame src=".html">
+<frameset cols="30%,70%">
+<frame src=".html">.
+<frame src=".html">
+</frameset>

@@ -1,0 +1,9 @@
+When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <wbr> element to add word break opportunities.
+<!DOCTYPE html>
+<html>
+<body>
+XML<wbr>Http<wbr>Request Object.
+Note:</b> The wbr element is not supported in IE.</p>
+
+</body>
+</html>

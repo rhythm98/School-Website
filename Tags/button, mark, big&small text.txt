@@ -1,0 +1,12 @@
+Clickable button
+<button></button>
+
+
+
+Marked (selected) Text
+<mark></mark>
+
+
+
+We can change the size of the selected text by using 2 tag (as compared to others)
+<big></big> , <small></small> 
